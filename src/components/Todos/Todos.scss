@@ -1,0 +1,65 @@
+@import '../../scss/variables';
+@import '../../scss/fonts';
+
+.todos {
+    flex: auto;
+    overflow-y: auto;
+
+    @media  screen and (max-width: 768px) {
+        max-height: 100%;
+    }
+}
+
+.label {
+    display: block;
+    width: 100%;
+    padding: 1.2rem 1rem 1.2rem 110px;
+
+    @media  screen and (max-width: 1024px) {
+        padding-left: 74px;
+    }
+    border-bottom: 1px solid $light-color;
+    @include font(32, 300, 1.3);   
+    color: $primary-color;
+    position: relative;
+    cursor: pointer;
+    input[type="checkbox"] {
+        appearance: none;
+    }
+    .checkbox__checked, .checkbox__unchecked {
+        display: block;
+        margin: 0 31px;
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+
+        @media  screen and (max-width: 1024px) {
+            margin: 0 21px;
+            width: 32px;
+            height: 32px;
+        }
+        svg {
+            stroke: $light-color;
+        }
+    }
+    .checkbox__checked {
+        display: none;
+        svg {
+            stroke: $green-color;
+        }
+    }
+    input[type='checkbox']:checked ~ .checkbox__checked {
+        display: block;
+    }
+    span ~ input[type='checkbox']:checked {
+        display: block;
+        color: $primary-color;
+    }
+
+    @media  screen and (max-width: 1024px) {
+        @include font(24, 300, 1.3);
+    }
+}

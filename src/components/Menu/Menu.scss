@@ -1,0 +1,37 @@
+@import '../../scss/variables';
+@import '../../scss/fonts';
+
+.menu {
+    border-top: 1px solid $light-color;
+    @include flex(space-between, center);
+    padding: 1em 31px;
+
+    @media  screen and (max-width: 767px) {
+        margin: 1.5em 0;
+        flex-wrap: wrap;
+        //justify-content: center;
+        gap:1.5em;
+    }
+    @media  screen and (max-width: 600px) {
+        justify-content: center;
+    }
+    span {
+        text-decoration: none;
+        color: $primary-color;
+        @include font(16, 400, 1);
+        cursor: pointer;
+    }
+    > div {
+        @include flex(space, center);
+        span {
+            display: block;
+            padding: 0.5em 1em;
+            border: 2px solid #fff;
+            border-radius: 6px;
+            
+            &.active, &:hover {
+                border: 2px solid $red-color;
+            }
+        }
+    }
+}
