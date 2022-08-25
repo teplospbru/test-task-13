@@ -23,8 +23,12 @@
     color: $primary-color;
     position: relative;
     cursor: pointer;
+    transition: 0.2 all;
     input[type="checkbox"] {
         appearance: none;
+    }
+    &:hover {
+        background-color: $darkenColor;
     }
     .checkbox__checked, .checkbox__unchecked {
         display: block;

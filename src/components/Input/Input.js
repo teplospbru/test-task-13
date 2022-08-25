@@ -59,20 +59,20 @@ const Input = () => {
             {
                 isWarning 
                     ? (
-                        <div>
+                        <div data-testid='warning'>
                             <svg>
                                 <use xlinkHref="#warning"></use>
                             </svg>
                         </div> )
                     : (
-                        <div style={{ cursor: 'pointer' }} onClick={ clickHandler }>
+                        <div style={{ cursor: 'pointer' }} onClick={ clickHandler } data-testid='btn'>
                             <svg>
                                 <use xlinkHref="#chevron-1"></use>
                             </svg>
                         </div> )
             }
             <input 
-                placeholder={ isWarning ? '3 characters minimum!' : 'What needs to be done?' } 
+                placeholder={ isWarning ? 'Enter 3 characters at least!' : 'What needs to be done?' } 
                 value={ value }
                 onChange={ inputHandler } 
                 onKeyPress = { pressEnterHandler } 

@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing the component "Input" matches to snapshot 1`] = `
+<div
+  className="line-1"
+>
+  <div
+    data-testid="btn"
+    onClick={[Function]}
+    style={
+      Object {
+        "cursor": "pointer",
+      }
+    }
+  >
+    <svg>
+      <use
+        xlinkHref="#chevron-1"
+      />
+    </svg>
+  </div>
+  <input
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyPress={[Function]}
+    placeholder="What needs to be done?"
+    value=""
+  />
+</div>
+`;
+
+exports[`testing the component "Input" renders the component 1`] = `
+<div
+  className="line-1"
+>
+  <div
+    data-testid="btn"
+    onClick={[Function]}
+    style={
+      Object {
+        "cursor": "pointer",
+      }
+    }
+  >
+    <svg>
+      <use
+        xlinkHref="#chevron-1"
+      />
+    </svg>
+  </div>
+  <input
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyPress={[Function]}
+    placeholder="What needs to be done?"
+    value=""
+  />
+</div>
+`;

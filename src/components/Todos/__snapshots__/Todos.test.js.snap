@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing the component "Todos" matches to snapshot 1`] = `
+<div
+  className="todos"
+  data-testid="todos"
+  style={
+    Object {
+      "height": "",
+    }
+  }
+>
+  <label
+    className="label"
+    data-testid="todo"
+    htmlFor={1}
+  >
+    <input
+      checked={false}
+      id={1}
+      name="policy"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      data-testid="span"
+      style={null}
+    >
+      Next, we need to import the reducer function from the counter slice and add it to our store
+    </span>
+    <div
+      className="checkbox__unchecked"
+    >
+      <svg>
+        <use
+          xlinkHref="#unchecked"
+        />
+      </svg>
+    </div>
+    <div
+      className="checkbox__checked"
+    >
+      <svg>
+        <use
+          xlinkHref="#checked"
+        />
+      </svg>
+    </div>
+  </label>
+  <label
+    className="label"
+    data-testid="todo"
+    htmlFor={2}
+  >
+    <input
+      checked={true}
+      id={2}
+      name="policy"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      data-testid="span"
+      style={
+        Object {
+          "color": "#d1d1d1",
+          "fontStyle": "italic",
+          "textDecoration": "line-through",
+        }
+      }
+    >
+      Creating a slice requires a string name to identify the slice
+    </span>
+    <div
+      className="checkbox__unchecked"
+    >
+      <svg>
+        <use
+          xlinkHref="#unchecked"
+        />
+      </svg>
+    </div>
+    <div
+      className="checkbox__checked"
+    >
+      <svg>
+        <use
+          xlinkHref="#checked"
+        />
+      </svg>
+    </div>
+  </label>
+  <label
+    className="label"
+    data-testid="todo"
+    htmlFor={3}
+  >
+    <input
+      checked={false}
+      id={3}
+      name="policy"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      data-testid="span"
+      style={null}
+    >
+      Provide the Redux Store to React
+    </span>
+    <div
+      className="checkbox__unchecked"
+    >
+      <svg>
+        <use
+          xlinkHref="#unchecked"
+        />
+      </svg>
+    </div>
+    <div
+      className="checkbox__checked"
+    >
+      <svg>
+        <use
+          xlinkHref="#checked"
+        />
+      </svg>
+    </div>
+  </label>
+</div>
+`;

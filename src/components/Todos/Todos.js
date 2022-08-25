@@ -23,18 +23,17 @@ const Todos = ({ todos }) => {
     }
     
     return (
-        <div className='todos' ref={ div } style={{ height }}>
+        <div className='todos' ref={ div } style={{ height }} data-testid='todos'>
             {
                 todos.map(({ id, body, isCompleted }) => (
-                    <label className="label" htmlFor={ id } key={ id + '_1' }>
+                    <label className="label" htmlFor={ id } key={ id + '_1' } data-testid='todo'>
                         <input 
                             type="checkbox" 
                             name="policy" id={ id } 
                             checked={ isCompleted } 
                             onChange={ () => checkboxHandler(id) }
-                            
                         ></input>
-                        <span style={ isCompleted ? styles : null }>{ body }</span>
+                        <span style={ isCompleted ? styles : null } data-testid="span">{ body }</span>
                         <div className="checkbox__unchecked">
                             <svg>
                                 <use xlinkHref="#unchecked"></use>

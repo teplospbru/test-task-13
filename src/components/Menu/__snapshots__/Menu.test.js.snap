@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing the component "Menu" matches to snapshot 1`] = `
+<nav
+  className="menu"
+>
+  <span>
+    2 items left
+  </span>
+  <div>
+    <span
+      className="active"
+      onClick={[Function]}
+    >
+      All
+    </span>
+    <span
+      className={null}
+      onClick={[Function]}
+    >
+      Active
+    </span>
+    <span
+      className={null}
+      onClick={[Function]}
+    >
+      Completed
+    </span>
+  </div>
+  <span
+    onClick={[Function]}
+  >
+    Clear completed
+  </span>
+</nav>
+`;

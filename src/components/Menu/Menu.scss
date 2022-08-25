@@ -23,11 +23,13 @@
     }
     > div {
         @include flex(space, center);
+        gap: 0.5em;
         span {
             display: block;
             padding: 0.5em 1em;
             border: 2px solid #fff;
             border-radius: 6px;
+            transition: 0.2s all;
             
             &.active, &:hover {
                 border: 2px solid $red-color;
